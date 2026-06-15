@@ -1,0 +1,13 @@
+site_name: KUNTA STUDIO
+theme:
+  name: material
+  palette:
+    primary: indigo
+  features:
+    - navigation.tabs
+
+nav:
+  - Home: index.md
+  - Organization: team.md
+  - Contents: gallery.md
+  - Information: info.md
