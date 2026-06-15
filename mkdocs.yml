@@ -1,34 +1,42 @@
-name: ci
-on:
-  push:
-    branches:
-      - main
-# Node.js 24 환경을 강제로 사용하도록 설정
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install dependencies
-        run: pip install mkdocs-material
-      - name: Build
-        run: mkdocs build
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'site'
-      - name: Deploy
-        uses: actions/deploy-pages@v4
+site_name: KUNTA STUDIO
+site_url: https://kuntastudio.github.io/
+site_description: 로스 산토스 멀티미디어 엔터테인먼트 — KUNTA STUDIO 공식 소개
+
+theme:
+  name: material
+  language: ko
+  logo: assets/images/logo.png
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+
+nav:
+  - Main: index.md
+  - Organization: organization.md
+  - Contents: contents.md
+  - Information: information.md
+
+extra_css:
+  - https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  generator: false
+
+copyright: Copyright &copy; KUNTA STUDIO
