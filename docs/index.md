@@ -18,7 +18,7 @@ hide:
 <div class="grid services" markdown>
 
 -   ### **NEWS**
-    ![뉴스](https://i.imgur.com/뉴스아이콘.png)
+    ![뉴스](https://i.imgur.com/SEsI7Hg.png)
     LS 인사이더 및 현장 취재
 
 -   ### **MEDIA**
