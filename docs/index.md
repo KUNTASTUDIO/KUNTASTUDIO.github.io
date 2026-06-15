@@ -22,11 +22,11 @@ hide:
     LS 인사이더 및 현장 취재
 
 -   ### **MEDIA**
-    ![미디어](https://i.imgur.com/미디어아이콘.png)
+    ![미디어](https://i.imgur.com/3JKV6xk.png)
     영상 편집 및 아카이빙
 
 -   ### **ADVERTISING**
-    ![광고](https://i.imgur.com/광고아이콘.png)
+    ![광고](https://i.imgur.com/H6QmhDd.png)
     기업 및 개인 홍보 광고
 
 </div>
