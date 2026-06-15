@@ -91,11 +91,11 @@ hide:
         <span class="ks-rules-block__tag">Out-of-Character</span>
         <h3 class="ks-rules-block__title">OOC 가이드라인</h3>
       </header>
-      <p class="ks-rules-block__lead">RP의 즐거움과 효율적인 협업을 위한 약속입니다.</p>
+      <p class="ks-rules-block__lead">RP에 집중하기 위한 약속입니다.</p>
       <ul class="ks-rule-list">
         <li class="ks-rule-item">
           <span class="ks-rule-item__title">OOC 업무 처리</span>
-          <p class="ks-rule-item__desc">편집 및 자료 정리 등 OOC 작업은 사전에 OOC 공지 후 사무실 등으로 이동하거나 접속을 종료하여 RP 흐름을 방해하지 않아야 합니다. <strong>항상 RP 합시다!</strong></p>
+          <p class="ks-rule-item__desc">편집 및 자료 정리 등 작업은 사전에 OOC 공지 후 사무실 등으로 이동하거나 접속을 종료하여 RP 흐름을 방해하지 않아야 합니다. <strong>항상 RP 합시다!</strong></p>
         </li>
         <li class="ks-rule-item">
           <span class="ks-rule-item__title">규정 준수</span>
