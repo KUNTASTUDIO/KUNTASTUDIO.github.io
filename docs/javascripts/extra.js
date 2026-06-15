@@ -16,6 +16,19 @@ function joinBase(base, path) {
   return base === "." ? clean : `${base.replace(/\/?$/, "/")}${clean}`;
 }
 
+function siteUrl(path) {
+  const base = getBase();
+  const isRoot = !path || path === "/";
+
+  if (base === "." || base === "./") {
+    if (isRoot) return "/";
+    const segment = path.replace(/^\//, "").replace(/\/$/, "");
+    return `/${segment}/`;
+  }
+
+  return joinBase(base, isRoot ? "/" : path);
+}
+
 function isNavActive(path) {
   const pathname = window.location.pathname.replace(/\/index\.html$/, "/");
   const segment = path.replace(/^\//, "").replace(/\/$/, "");
@@ -49,7 +62,6 @@ function mountHeaderNav() {
     const list = document.createElement("ul");
     list.className = "ks-nav__list";
 
-    const base = getBase();
     NAV_ITEMS.forEach(({ label, path }) => {
       const item = document.createElement("li");
       item.className = "ks-nav__item";
@@ -57,7 +69,7 @@ function mountHeaderNav() {
       const link = document.createElement("a");
       link.className = "ks-nav__link";
       link.textContent = label;
-      link.href = joinBase(base, path);
+      link.href = siteUrl(path);
 
       item.appendChild(link);
       list.appendChild(item);
@@ -67,10 +79,9 @@ function mountHeaderNav() {
     headerInner.appendChild(nav);
   }
 
-  const base = getBase();
   nav.querySelectorAll(".ks-nav__link").forEach((link, index) => {
     const { path } = NAV_ITEMS[index];
-    link.href = joinBase(base, path);
+    link.href = siteUrl(path);
     link.classList.toggle("ks-nav__link--active", isNavActive(path));
     link.parentElement.classList.toggle("ks-nav__item--active", isNavActive(path));
   });
@@ -81,7 +92,11 @@ function mountHeaderNav() {
 
 function assetUrl(path) {
   const clean = path.replace(/^\//, "");
-  return joinBase(getBase(), clean);
+  const base = getBase();
+  if (base === "." || base === "./") {
+    return `/${clean}`;
+  }
+  return joinBase(base, clean);
 }
 
 function fixEpisodeMediaPaths(root) {
