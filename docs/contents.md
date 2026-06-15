@@ -9,7 +9,7 @@ hide:
 <div class="ks-page-hero">
   <span class="ks-section-label">Contents</span>
   <h1>컨텐츠</h1>
-  <p>LS Leaks · GangLand 시리즈와 KUNTA STUDIO 미디어 아카이브입니다. 에피소드를 선택하면 아래로 펼쳐지며 시청할 수 있습니다.</p>
+  <p>LS Leaks · GangLand 시리즈와 KUNTA STUDIO 미디어 아카이브입니다.<br>에피소드를 선택하면 아래로 펼쳐지며 시청할 수 있습니다.</p>
 </div>
 
 <div class="ks-episodes" data-ks-episodes>
