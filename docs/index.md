@@ -3,32 +3,30 @@ hide:
   - navigation
 ---
 
-# KUNTA STUDIO
-
 <div class="hero-banner" style="background-image: url('https://i.imgur.com/8el6g9G.png');">
-    <div class="hero-text">
-        <h1>뉴 미디어의 새로운 기준</h1>
-        <p>기존의 틀을 깨고, 로스 산토스의 진실만을 기록합니다.</p>
+    <div class="hero-logo">
+        <img src="https://i.imgur.com/8el6g9G.png" alt="KUNTA STUDIO">
     </div>
 </div>
 
-<br>
+<div class="intro-section">
+    <h2>"가장 낮은 곳의 목소리부터 가장 화려한 축제의 현장까지"</h2>
+    <p>멀티미디어 엔터테인먼트입니다. 우리는 거대 언론사가 외면하는 거리의 현실을 가감 없이 보도하며 시민들의 눈과 귀가 되어 도시의 구석구석을 연결합니다. KUNTA STUDIO는 로스 산토스와 함께 성장하며, 이 도시의 새로운 역사를 써 내려가고 있습니다.</p>
+</div>
 
-<div class="grid cards" markdown>
+<h2 style="text-align: center; margin-top: 40px;">Services</h2>
+<div class="grid services" markdown>
 
--   ### **LS 인사이더**
-    진실을 파헤치는 LS의 심층 탐사 리포트
-    ![LS 인사이더](https://i.imgur.com/이미지코드1.png)
-    [바로가기](contents.md)
+-   ### **NEWS**
+    ![뉴스](https://i.imgur.com/뉴스아이콘.png)
+    LS 인사이더 및 현장 취재
 
--   ### **갱랜드**
-    도시의 어두운 이면, 지하 세계의 기록
-    ![갱랜드](https://i.imgur.com/이미지코드2.png)
-    [바로가com](contents.md)
+-   ### **MEDIA**
+    ![미디어](https://i.imgur.com/미디어아이콘.png)
+    영상 편집 및 아카이빙
 
--   ### **브랜드 광고**
-    당신의 가치를 가장 세련되게 송출합니다
-    ![광고](https://i.imgur.com/이미지코드3.png)
-    [바로가기](contents.md)
+-   ### **ADVERTISING**
+    ![광고](https://i.imgur.com/광고아이콘.png)
+    기업 및 개인 홍보 광고
 
 </div>
