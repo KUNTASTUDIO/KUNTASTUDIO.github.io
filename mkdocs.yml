@@ -1,13 +1,11 @@
-site_name: KUNTA STUDIO
 theme:
   name: material
   palette:
-    primary: indigo
+    primary: indigo  # 원하시는 팩션 테마 컬러로 변경 가능
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - navigation.tabs
-
-nav:
-  - Home: index.md
-  - Organization: team.md
-  - Contents: gallery.md
-  - Information: info.md
+    - navigation.sections
