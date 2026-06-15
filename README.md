@@ -2,19 +2,26 @@
 
 공식 사이트: https://kuntastudio.github.io/
 
-## GitHub Pages 설정 (중요)
+## GitHub Pages 설정 (필수 — 여기만 맞추면 됨)
 
-**Settings → Pages → Build and deployment → Source** 는 반드시 **GitHub Actions** 여야 합니다.
+**Settings → Pages → Build and deployment**
 
-| 설정 | 결과 |
+1. **Source**: `Deploy from a branch` 선택
+2. **Branch**: `gh-pages` ← 이것만 사용
+3. **Folder**: `/ (root)`
+
+| Branch | 결과 |
 |---|---|
-| **GitHub Actions** | 정상 (MkDocs 빌드, CSS·메뉴·레이아웃 적용) |
-| Deploy from a branch (`main` / `docs`) | **깨짐** (원본 md만 보임, 디자인 없음) |
+| **`gh-pages` / root** | 정상 (빌드된 사이트) |
+| `main` / root | 깨짐 (README만 보임) |
+| `main` / docs | 깨짐 (CSS 없음) |
 
-`Deploy from a branch` 로 바꾸면 사이트가 다시 이상하게 보입니다. **건드리지 마세요.**
+**`main` 브랜치는 절대 Pages 소스로 쓰지 마세요.**
+
+push 할 때마다 Actions가 `gh-pages` 브랜치를 자동으로 최신 빌드로 갱신합니다.
 
 ## 직접 수정할 때
 
-1. `docs/` 폴더의 파일 수정
+1. `docs/` 폴더 수정
 2. `git add` → `git commit` → `git push origin main`
-3. Actions 탭에서 **Deploy site** 워크플로 성공 확인 (1~2분)
+3. Actions **Deploy site** 성공 확인 (1~2분)
