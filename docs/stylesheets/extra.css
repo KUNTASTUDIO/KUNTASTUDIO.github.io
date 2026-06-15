@@ -1,0 +1,14 @@
+/* 카드 섹션 스타일 */
+.kunta-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.kunta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
