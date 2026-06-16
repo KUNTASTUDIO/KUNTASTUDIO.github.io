@@ -107,7 +107,7 @@ hide:
         </li>
         <li class="ks-rule-item">
           <span class="ks-rule-item__title">존중과 소통</span>
-          <p class="ks-rule-item__desc">팩션원 모두의 즐거운 RP 경험을 하길 원합니다. 작업 환경이나 활동에 방해가 되는 요소가 있다면 즉시 리더진에 공유해 주시면 조치하겠습니다.</p>
+          <p class="ks-rule-item__desc">팩션원 모두가 즐거운 RP 경험을 하길 원합니다. 작업 환경이나 활동에 방해가 되는 요소가 있다면 즉시 리더진에 공유해 주시면 조치하겠습니다.</p>
         </li>
       </ul>
     </article>
